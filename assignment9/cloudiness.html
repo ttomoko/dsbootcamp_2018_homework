@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8" />
+    <title>Bootstrap Visualization Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--CSS Link-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!--"Lattitude" in navbar-->
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="landing.html">Lattitude</a>
+                </div>
+                <!--right side of navbar-->
+                <ul class="nav navbar-nav navbar-right">
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots 
+                        <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="maxtemperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="windspeed.html">Wind Speed</a></li>
+                          </ul>
+                   </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+              </div>
+        </nav>
+      
+       <!--main page-->
+       <div class="container">
+      
+          <!-- Row 1  xs (phones), sm (tablets), md (desktops), and lg (larger desktops)-->
+          <div class="row">
+            <div class="col-md-7">
+              <h1 class="box-title">Cloudiness</h1>
+            
+            <br><br>
+              <img src="Fig3.png" alt="Temp vs Cloudiness" height="280" width="280" align="left">
+              <br>
+              <p>
+                  There is no direct correlation between cloudieness and latitude.  
+                  However, the scatterplot shows scattered result.
+              </p>
+            </div>
+            
+          <!-- Row 2 Right Box  xs (phones), sm (tablets), md (desktops), and lg (larger desktops)-->
+          <div class="box-set">
+            <div class="col-md-5">
+              <h2 class="subbox-title">Visualizations</h2>
+              <div class="box">
+                  <a href="maxtemperature.html"><img src="Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
+                  <a href="humidity.html"><img src="Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+                  <a href="cloudiness.html"><img src="Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
+                  <a href="windspeed.html"><img src="Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+              </div>
+            </div>
+          </div>
+          </div>
+       </div>
+
+
+<!-- jQuery CDN -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+      
+      
+</body>
+</html>
